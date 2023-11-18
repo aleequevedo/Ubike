@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f8f8f8;
+}
+
+.header-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2fc1d3;
+    height: 81px;
+    width: auto;
+}
+
+aside{
+    width: 10%;
+    float: right;
+    /*padding-left: 0.5rem;
+    margin-left: 0.5rem;*/
+}
+
+h5{
+    display: flex;
+    justify-content: flex-end;
+    font-family: Raleway, sans-serif; 
+    font-weight: 300;
+    font-size: 20px;
+    color: #f8f8f8;
+}
+
+/* esta es la parte del menu
+.menu-btn {
+    cursor: pointer;
+    display: none; /* Hide by default on larger screens 
+}
+
+.menu-btn .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #f8f8f8;
+    margin: 5px 0;
+}*/
+
+.header-nav{
+    background-color: #d9d9d9;
+    font-style: 'Lato';
+
+}
+
+.header-menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn{
+    cursor: pointer;
+    display: none; /* Hide by default on larger screens */
+}
+
+.menu-btn .bar{
+    width: 25px;
+    height: 3px;
+    background-color: #f8f8f8;
+    margin: 5px 0;
+}
+
+/* Media query for small screens (e.g., mobile) */
+@media only screen and (max-width: 600px) {
+    .header-nav {
+        display: none; /* Hide the nav by default on small screens */
+        /* Add additional styling as needed */
+    }
+
+    .menu-btn {
+        display: block; /* Show hamburger menu button on small screens */
+    }
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family:'Raleway', sans-serif; 
+    font-weight: 600;
+    color: #4D4D4D;
+}
+
+h2{
+    font-family:'Roboto', sans-serif;
+    font-weight: 500;
+    color: #4D4D4D;
+}
+
+h3{
+    font-family: 'Ralway', sans-serif;
+    font-weight: 500;
+    color: #4D4D4D;
+}
+
+h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #4D4D4D;
+}
+
+.header-nav li a{
+    text-decoration: none;
+    font-family:'Raleway', sans-serif;
+    font-weight: 400;
+    color:#4D4D4D;
+}
