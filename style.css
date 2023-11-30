@@ -177,7 +177,7 @@ h4{
     color: #f8f8f8;
     text-align: center;
     font-family: 'Roboto', sans-serif; 
-    font-weight: 600;
+    font-weight: 500;
     font-size: 17px;
     font-style: normal;
     line-height: normal;
@@ -259,7 +259,7 @@ h4{
     background: var(--AMARILLO, #F2DD1E);
     color: var(--GRIS-1, #4D4D4D);
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
@@ -334,7 +334,7 @@ h4{
 .card-handbook h5 {
     color: var(--GRIS-1, #4D4D4D);
     text-align: justify;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
@@ -345,7 +345,7 @@ h4{
 .card-handbook-content p{
     color: var(--GRIS-1, #4D4D4D);
     text-align: justify;
-    font-family: Raleway;
+    font-family: 'Raleway';
     font-size: 13px;
     font-style: normal;
     font-weight: 500;
@@ -367,6 +367,15 @@ h4{
     background-color: #2980b9;
 }
 
+.handbook-button{
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
 .handbook-button-container{
     display:flex;
     justify-content: center;
@@ -383,9 +392,62 @@ h4{
     background: var(--BOTON, #D42444);
     color: var(--BLANCO-U, #F8F8F8);
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/*aquí empieza la info app*/ 
+.info-app h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-app h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-app-image{
+    background: url(<path-to-image>), #F8F8F8 50% / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    margin-left: 88px;
+    margin-right: 88px;
+}
+
+
+/*aquí comienza la parte de comunidad*/
+
+.comunidad-container{
+    display: grid;
+    grid-template-columns:;
+}
+
+.comunidad-text-container h2{
+    text-align: center;
+}
+
+.comunidad-text-container p{
+    color: var(--GRIS-1, #4D4D4D);
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: ;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.comunidad-text-container h4{
+    color: var(--GRIS-1, #4D4D4D);
+    font-family: Raleway;
+    font-size: ;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
 }
