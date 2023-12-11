@@ -101,8 +101,21 @@ h4{
     color: #4D4D4D;
 }
 
-/*este es slider hombe */ 
+.pages-container{
+    width: 100%;
+    height: 100vh;
+}
 
+
+/*este es slider home */ 
+
+/*.first-page-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/ 
 
 .slider-home {
     position: relative;
@@ -132,6 +145,11 @@ h4{
 
 /*aqui empieza la seccion de blog */ 
 
+.entradas-blog{
+    width: 100%;
+    height: 100vh;
+}
+
 .entradas-blog-title{
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -151,6 +169,7 @@ h4{
 
 
 .cards-blog-container{
+    height: 75vh;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -161,7 +180,6 @@ h4{
 .card-blog {
     width: calc(30% - 20px);
     margin-bottom: 20px;
-
     display: flex;
     flex-direction: column; /* Adjusted for stacking children */
 }
@@ -173,31 +191,34 @@ h4{
     flex-direction: column;
 }
 
+.card-blog-tittle{
+    background-color: hsla(0, 0%, 0%, 0.5);
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-blog-content h5{
     color: #f8f8f8;
-    text-align: center;
     font-family: 'Roboto', sans-serif; 
     font-weight: 500;
     font-size: 17px;
     font-style: normal;
     line-height: normal;
-    background-color: hsla(0, 0%, 0%, 0.5);
-    padding: 19px;
 }
 
 .card-blog-image {
-    background: #ddd;
     display: flex;
     align-items: center;
     justify-content: center;
     background-size: cover;
     background-position: center;
-    flex-grow: 1; /* Adjusted to make image fill the available space */
+    flex-grow: 0; /* Adjusted to make image fill the available space */
 }
 
 .card-blog-image img {
     max-width: 100%;
-    max-height: 100%;
 }
 
 
@@ -226,7 +247,11 @@ h4{
 
 .blog-button-container {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .blog-button {
@@ -243,13 +268,7 @@ h4{
     background-color: #2980b9;
 }
 
-.blog-button-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-}
-
+a
 .blog-button {
     width: 186px;
     height: 34px;
@@ -268,6 +287,11 @@ h4{
 }
 
 /*aqui empieza la seccion de handbook */ 
+
+.handbook-container{
+    width: 100%;
+    height: 100vh;
+}
 
 .handbook-title{
     display: grid;
@@ -400,6 +424,12 @@ h4{
 }
 
 /*aquí empieza la info app*/ 
+
+.info-app{
+    width: 100%;
+    height: 100vh;
+}
+
 .info-app h2{
     display: flex;
     justify-content: center;
@@ -423,9 +453,22 @@ h4{
 
 /*aquí comienza la parte de comunidad*/
 
-.comunidad-container{
-    display: grid;
-    grid-template-columns:;
+
+
+.comunidad-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.comunidad-text-container {
+    width: 40%;
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+}
+
+.comunidad-image-container {
+    width: 60%; /* Ajusta el ancho según tus preferencias */
+    position: relative;
 }
 
 .comunidad-text-container h2{
@@ -436,7 +479,6 @@ h4{
     color: var(--GRIS-1, #4D4D4D);
     text-align: center;
     font-family: 'Raleway';
-    font-size: ;
     font-style: italic;
     font-weight: 500;
     line-height: normal;
@@ -444,10 +486,29 @@ h4{
 
 .comunidad-text-container h4{
     color: var(--GRIS-1, #4D4D4D);
-    font-family: Raleway;
-    font-size: ;
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: center;
 }
+
+
+.comunidad-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.instagram-carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Ajusta el ancho del carrusel según tus preferencias */
+}
+
+.instagram-carousel img {
+    width: 100%;
+    height: auto;
+}
+
