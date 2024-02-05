@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/ 
 }
 
 body{
@@ -453,22 +453,17 @@ a
 
 /*aquí comienza la parte de comunidad*/
 
-
-
 .comunidad-container {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Añade espacio entre las columnas */
 }
 
 .comunidad-text-container {
-    width: 40%;
-    padding: 20px; /* Ajusta el relleno según sea necesario */
-}
-
-.comunidad-image-container {
-    width: 60%; /* Ajusta el ancho según tus preferencias */
-    position: relative;
+    flex: 40%; /* El 40% del espacio disponible */
+    padding: 50px 20px; 
 }
 
 .comunidad-text-container h2{
@@ -493,22 +488,74 @@ a
     text-align: center;
 }
 
-
-.comunidad-image-container img {
-    width: 100%;
+.comunidad-image-container {
     height: auto;
+    flex: 60%; /* El 60% del espacio disponible */
+    padding: 5% 10%; 
+    background: url('IMAGES/img_comunidad_ubike_desktop_555x378pxBack.gif') center/cover no-repeat;
 }
 
-.instagram-carousel {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%; /* Ajusta el ancho del carrusel según tus preferencias */
-}
-
-.instagram-carousel img {
+.carousel-inner img {
     width: 100%;
-    height: auto;
+    height:auto;
 }
 
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo negro con opacidad del 50% */
+    color: white; /* Color del texto */
+    background-size: 100%;
+}
+
+
+/* aquí empieza el footer*/ 
+
+.footer {
+    background-color: #2fc1d3;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+ 
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin: 0 10px;
+  }
+  
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 10px;
+  }
+  
+  .social-media-icons a img {
+    width: 25px;
+    height: auto;
+  }
+  
+  .footer-copyright {
+    margin-top: 20px;
+  }
